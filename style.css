@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Fraunces', serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+img{
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+.log{
+  padding: 25px 0 0 20px;
+}
+
+.logo{
+  display: none;
+  padding: 25px 0 0 20px;
+  justify-content: center;
+}
+main{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding:0 20px 32px;
+}
+main h1{
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-style: 32px;
+  color: hsl(0, 6%, 24%);
+  font-size: 80px;
+  text-align: justify;
+  margin-left: 30px;
+}
+main h1 span{
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+
+}
+.hello{
+  color: hsl(0, 36%, 70%);
+  font-size: 25px;
+  line-height: 1.6;
+  line-height: 40px;
+  width: 70%;
+  font-weight: lighter;
+  text-align: justify;
+  margin: 12px;
+}
+main .image{
+  width: 80%;
+  margin: 32px 0;
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+}
+form input{
+  padding: 12px 26px;
+  border: 3px solid hsl(0, 36%, 70%);
+  border-radius: 30px;
+  width: 490px;
+  margin: 32px 0 0;
+  color: hsl(0, 36%, 70%);
+  font-size: 26px;
+}
+form input::placeholder{
+  color: hsl(0, 36%, 70%);
+  
+}
+button{
+  position: relative;
+  right: 14%;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: hsl(0, 36%, 70%);
+  background-image: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+}
+button:hover{
+  background:hsl(0, 80%, 86%);
+}
+form label{
+  position: relative;
+  left: -40%;
+  top: 5%;
+  display: none;
+  transform: translate(-36%);
+  /* right: 2.2rem; */
+}
+.error{
+  color: hsl(0, 93%, 68%);
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 24px;
+  display: none;
+}
+.text{
+  text-align: left;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: red; */
+}
+.image-2{
+  display: none;
+}
+.attribution {
+  font-size: 22px;
+  text-align: center;
+}
+
+.attribution a{
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(./images/hero-mobile.jpg);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of flex items */
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .image {
+    max-width: 600px;
+    width: 100%;
+    margin: 16px 0; /* Adjust margin as needed */
+  }
+
+  main h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Reset margin-left */
+  }
+
+  form input {
+    width: 100%; /* Make the input full width for smaller screens */
+  }
+
+  form label {
+    left: 50%; /* Adjust label position */
+    transform: translateX(-50%); /* Center label horizontally */
+  }
+  .image-2{
+    display: block;
+  }
+
+  .error {
+    margin-left: 0; /* Reset margin-left for the error message */
+  }
+
+  .text {
+    margin-top: 10px; /* Adjust margin for the text element */
+  }
+}
+
